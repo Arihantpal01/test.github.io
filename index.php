@@ -35,14 +35,20 @@
   </div>
 </nav>
             
-
+<?php
+     if(isset($_GET["submit"])){
+     
+       $a = readfile("faulty server/new.py");
+       echo $a;
+     }
+     ?>
       
       
      </header>
     
     <div class="container">
       <form>
-        <button type="submit" class="btn btn-success btn-lg"><a href="faulty server/new.py">MY FILES</a></button>
+        <button type="submit" class="btn btn-success btn-lg">MY FILES</button>
       </form>
     </div>
 
